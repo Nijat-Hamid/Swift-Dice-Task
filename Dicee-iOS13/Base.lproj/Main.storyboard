@@ -45,24 +45,27 @@
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VBy-rb-zcQ">
-                                <rect key="frame" x="131" y="103" width="141" height="128"/>
+                                <rect key="frame" x="131" y="129" width="141" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20392156862745098" green="0.62352941176470589" blue="0.34901960784313724" alpha="0.5635347682119205" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6mU-U1-8Yq">
-                                <rect key="frame" x="131" y="298" width="141" height="128"/>
+                                <rect key="frame" x="131" y="324" width="141" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.20392156862745098" green="0.62352941176470589" blue="0.34901960784313724" alpha="0.5635347682119205" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gck-2P-74f">
+                                <rect key="frame" x="133" y="129" width="141" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.20392156859999999" green="0.62352941179999999" blue="0.34901960780000002" alpha="0.56353476820000004" colorSpace="custom" customColorSpace="sRGB"/>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                     </view>
                     <connections>
-                        <outlet property="SlotOne" destination="VBy-rb-zcQ" id="yk3-q8-ahM"/>
-                        <outlet property="SlotTwo" destination="6mU-U1-8Yq" id="4CO-hg-Kaw"/>
-                        <outlet property="slotOne" destination="VBy-rb-zcQ" id="dX1-Je-KkD"/>
-                        <outlet property="slotTwo" destination="6mU-U1-8Yq" id="fmB-F7-JMJ"/>
+                        <outletCollection property="diceImages" destination="gck-2P-74f" collectionClass="NSMutableArray" id="Qm7-6p-eIx"/>
+                        <outletCollection property="diceImages" destination="6mU-U1-8Yq" collectionClass="NSMutableArray" id="Dt3-9x-0GL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -6,4 +6,11 @@
 //  Copyright © 2024 London App Brewery. All rights reserved.
 //
 
-import Foundation
+import UIKit
+
+extension UIView{
+     func setupImageView(radius: CGFloat) {
+        layer.cornerRadius = radius
+        clipsToBounds = true
+    }
+}
